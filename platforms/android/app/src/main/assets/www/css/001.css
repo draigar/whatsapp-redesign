@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Book'), url('../fonts/Roboto-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Book'), url('../fonts/Roboto-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Book'), url('../fonts/Roboto-Thin.ttf') format('ttf');
+}

@@ -1,0 +1,336 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.space,
+.space-sm,
+.space-md,
+.space-lg {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.space-sm {
+    padding-top: 15px;
+}
+
+.space-md {
+    padding-top: 20px;
+}
+
+.space {
+    padding-top: 30px;
+}
+
+.space-lg {
+    padding-top: 50px;
+}
+
+.br {
+    border: solid 1px #000;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #E4E4E4;
+    margin: 0 auto;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.app {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.hdd {
+    position: fixed;
+    z-index: 10;
+    height: 17%;
+    width: 100%;
+    float: left;
+}
+
+.sdd {
+    position: fixed;
+    top: 18%;
+    width: 100%;
+    float: left;
+    height: 75%;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+
+.header {
+    float: left;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-weight: normal;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 20px;
+}
+
+.settings-icon {
+    background-color: rgba(7, 94, 84, 0.16);
+    border-radius: 50%;
+    padding: 5px;
+    color: #075E54;
+    position: relative;
+    top: 10px;
+    font-size: 24px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    color: #000 !important;
+}
+
+.search .input-field {
+    color: #000 !important;
+}
+
+.search .input-field input[type=search] {
+    border: none;
+    box-shadow: 0;
+    background-color: rgba(7, 94, 84, 0.09);
+    color: #000 !important;
+    border-radius: 20px;
+    padding: 0 35px;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    transition: all ease-in .3s;
+}
+
+.search .input-field i {
+    position: relative;
+    font-size: 24px;
+    top: -20px;
+    left: 10px;
+}
+
+.search .input-field input[type=search]:focus {
+    background-color: #fff !important;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .1) !important;
+    padding: 0 40px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    height: 50px;
+    background-color: rgba(7, 94, 84, 0.14);
+    width: 100%;
+    z-index: 5;
+}
+
+.status {
+    position: relative;
+    float: left;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px 20px;
+    top: -14px;
+}
+
+.status .status-ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: transparent;
+    border: solid 2px #075E54;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.status-ball.plus {
+    border: none;
+    padding: 0;
+    background-image: url('../img/logo.png');
+}
+
+.status-ball img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+
+.status::-webkit-scrollbar,
+.sdd::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+.status::-webkit-scrollbar-track,
+.sdd::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.status::-webkit-scrollbar-thumb,
+.sdd::-webkit-scrollbar-thumb {
+    background: #075E54;
+}
+
+/* Handle on hover */
+.status::-webkit-scrollbar-thumb:hover,
+.sdd::-webkit-scrollbar-thumb:hover {
+    background: rgb(17, 114, 103);
+}
+
+.status-ball img {
+    border-radius: 50%;
+}
+
+.status-ball.plus i {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: #fff;
+    background-color: #25b12b;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 1px;
+    width: 14px;
+    height: 14px;
+}
+
+.status-ball.plus i ion {
+    color: #fff !important;
+    position: relative;
+    z-index: 2;
+}
+
+.chats {
+    float: left;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.chats .chat-box {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.chat-box .im,
+.chat-box .det,
+.chat-box .tm {
+    float: left;
+    padding: 10px;
+}
+
+.chat-box .im {
+    width: 20%;
+}
+
+.chat-box .im img {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+
+.chat-box .det {
+    width: 67%;
+}
+
+.chat-box .tm {
+    width: 13%;
+}
+
+.chat-box .det h1 {
+    margin: 0;
+    padding: 2px;
+    font-weight: 600;
+    word-wrap: break-word;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-box .det p {
+    margin: 0;
+    padding: 2px;
+    word-wrap: break-word;
+    font-weight: normal;
+    color: #999;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-box .tm p {
+    margin: 0;
+    padding: 2px;
+    font-weight: 600;
+    color: #0fa117;
+}

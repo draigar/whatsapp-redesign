@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "WhatsApp",
+  "short_name": "WhatsApp",
+  "version": "io.sisco.whatsapp",
+  "description": "A simple re-design of whatsapp using cordova and vue",
+  "author": "Benjamin Francis (siscorule)",
+  "icons": [],
+  "start_url": "index.html"
+}
