@@ -33,7 +33,7 @@
     "cordova-browser": "^6.0.0",
     "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^6.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "vue-img-loader": "^1.0.0"
   },
   "cordova": {
